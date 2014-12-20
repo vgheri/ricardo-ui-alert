@@ -21,13 +21,13 @@ Element providing solution to no problem in particular.
 @status alpha
 @homepage http://polymerlabs.github.io/seed-element
 -->
-<polymer-element name="ricardo-ui-alert" attributes="notitle author">
+<polymer-element name="ricardo-ui-alert" attributes="status">
 
   <template>
 
     <link rel="stylesheet" href="ricardo-ui-alert.css">
-    <div id="alert-container">
-      <span id="alert-close-handle"><a href="#"><strong>&times;</strong></a></span>
+    <div id="alert-container" class="{{status}}" >
+      <span id="alert-close"><a id="alert-close-button" href="#"><strong>&times;</strong></a></span>
       <div id="alert-message">
         <h4>
           <content></content>
@@ -41,27 +41,24 @@ Element providing solution to no problem in particular.
 
     Polymer({
       /**
-       * The `author` attribute sets an initial author
+       * The `status` attribute sets the scope of the alert
        *
-       * @attribute author
+       * @attribute status
        * @type string
-       * @default 'Dimitri Glazkov'
+       * @default 'success'. Alt values: warning, info, error.
        */
-      author: 'Dimitri Glazkov',
-
-      /**
-       * `fancy` is a property that does something fancy.
-       *
-       * @property fancy
-       * @type bool
-       * @default false
-       */
-      fancy: false,
+      status: 'success',
 
       ready: function() {
         // Ready is a lifecycle callback.
         // You can do setup work in here.
         // More info: http://www.polymer-project.org/docs/polymer/polymer.html#lifecyclemethods
+        if (this.status !== 'success'
+         && this.status !== 'warning'
+         && this.status !== 'info'
+         && this.status !== 'error'){
+           this.status = 'success';
+        }
       },
 
       /**
