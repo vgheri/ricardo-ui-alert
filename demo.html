@@ -16,14 +16,30 @@
 
   <script src="../webcomponentsjs/webcomponents.min.js"></script>
   <link rel="import" href="ricardo-ui-alert.html">
-
+  <style>
+    ricardo-ui-alert {
+      margin: 10px 0px;
+    }
+  </style>
 </head>
 <body unresolved>
 
-  <p>An example of using <code>&lt;seed-element&gt;</code>:</p>
+  <p>An example of using <code>&lt;ricardo-ui-alert&gt;</code>:</p>
+
+  <ricardo-ui-alert status="success">
+    Great news: ricardo-alert-ui is born!
+  </ricardo-ui-alert>
 
   <ricardo-ui-alert status="info">
-    Hello ricardo-alert-ui!
+    Important info: ricardo-alert-ui is born!
+  </ricardo-ui-alert>
+
+  <ricardo-ui-alert status="warning">
+    Warning: ricardo-alert-ui is still in beta!
+  </ricardo-ui-alert>
+
+  <ricardo-ui-alert status="error">
+    Danger: ricardo-alert-ui is based on Polymer!
   </ricardo-ui-alert>
 
 </body>
