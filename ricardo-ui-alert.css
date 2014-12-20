@@ -12,45 +12,72 @@
   display: block;
 }
 
-#alert-container {
+#alertContainer {
   border-radius: 5px 5px;
   padding: 5px 15px;
   display: block;
   background-color: rgb(69, 219, 69);
+  -webkit-transition: opacity 1s;
+  opacity: 1;
 }
 
-#alert-container.success {
-  background-color: rgb(69, 219, 69);
+#alertContainer.faded {
+    opacity: 0;
 }
 
-#alert-container.error {
-  background-color: red;
+#alertContainer.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border-color: #d6e9c6;
 }
 
-#alert-container.info {
-  background-color: blue;
+#alertContainer.error {
+  background-color: #f2dede;
+  color: #a94442;
+  border-color: #ebccd1;
 }
 
-#alert-container.warning {
-  background-color: yellow;
+#alertContainer.info {
+  background-color: #d9edf7;
+  color: #31708f;
+  border-color: #bce8f1;
 }
 
-#alert-close {
+#alertContainer.warning {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+  border-color: #faebcc;
+}
+
+#alertClose {
   float: right;
   font-size: 13pt;
   padding: 2px 2px;
 }
 
-#alert-close a {
-  text-decoration: none;
+#alertClose button {
+  position: relative;
+  top: 16px;
   color: inherit;
-  display: block;
-  padding: 3px 3px;
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  font-size: 27px;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
 }
 
-#alert-close a:hover {
-  background-color: rgb(157, 226, 168);
-  border-radius: 5px 5px;
+#alertClose button:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=50);
+  opacity: .5;
 }
 
 /* To ensure your styling works under the Shadow DOM polyfill, see

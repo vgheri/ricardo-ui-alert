@@ -26,8 +26,12 @@ Element providing solution to no problem in particular.
   <template>
 
     <link rel="stylesheet" href="ricardo-ui-alert.css">
-    <div id="alert-container" class="{{status}}" >
-      <span id="alert-close"><a id="alert-close-button" href="#"><strong>&times;</strong></a></span>
+    <div id="alertContainer" class="{{status}}" >
+      <span id="alertClose">
+        <button type="button" on-click="{{dismiss}}">
+          <strong>&times;</strong>
+        </button>
+      </span>
       <div id="alert-message">
         <h4>
           <content></content>
@@ -64,13 +68,11 @@ Element providing solution to no problem in particular.
       /**
        * The `sayHello` method will return a greeting.
        *
-       * @method sayHello
-       * @param {String} greeting Pass in a specific greeting.
-       * @return {String} Returns a string greeting.
+       * @method dismiss
        */
-      sayHello: function(greeting) {
-        var response = greeting || 'Hello World!';
-        return 'seed-element says, ' + response;
+      dismiss: function() {
+        //this.$.alert-container.className += 'faded';
+        this.$.alertContainer.className += ' faded';
       },
 
       /**
