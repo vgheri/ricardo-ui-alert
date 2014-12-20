@@ -21,14 +21,19 @@ Element providing solution to no problem in particular.
 @status alpha
 @homepage http://polymerlabs.github.io/seed-element
 -->
-<polymer-element name="seed-element" attributes="notitle author">
+<polymer-element name="ricardo-ui-alert" attributes="notitle author">
 
   <template>
 
-    <link rel="stylesheet" href="seed-element.css">
-
-    <h1>Hello from seed-element</h1>
-    <content></content>
+    <link rel="stylesheet" href="ricardo-ui-alert.css">
+    <div id="alert-container">
+      <span id="alert-close-handle"><a href="#"><strong>&times;</strong></a></span>
+      <div id="alert-message">
+        <h4>
+          <content></content>
+        </h4>
+      </div>
+    </div>
 
   </template>
 

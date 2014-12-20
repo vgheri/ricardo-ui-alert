@@ -12,6 +12,31 @@
   display: block;
 }
 
+#alert-container {
+  border-radius: 5px 5px;
+  background-color: rgb(69, 219, 69);
+  padding: 5px 15px;
+  display: block;
+}
+
+#alert-close-handle {
+  float: right;
+  font-size: 13pt;
+  padding: 2px 2px;
+}
+
+#alert-close-handle a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 3px 3px;
+}
+
+#alert-close-handle a:hover {
+  background-color: rgb(157, 226, 168);
+  border-radius: 5px 5px;
+}
+
 /* To ensure your styling works under the Shadow DOM polyfill, see
    www.polymer-project.org/docs/polymer/styling.html#directives */
 polyfill-next-selector { content: ':host > h2'; }
