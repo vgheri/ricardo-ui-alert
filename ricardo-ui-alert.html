@@ -71,28 +71,12 @@ Element providing solution to no problem in particular.
        * @method dismiss
        */
       dismiss: function() {
-        this.$.alertContainer.className += ' faded';
-      },
-
-      /**
-       * The `seed-element-lasers-success` event is fired whenever we
-       * call fireLasers.
-       *
-       * @event seed-element-lasers-success
-       * @param {Object} detail
-       *   @param {string} detail.sound An amazing sound.
-       */
-
-      /**
-       * The `fireLasers` method will fire the lasers. At least
-       * it will dispatch an event that claims lasers were fired :)
-       *
-       * @method fireLasers
-       */
-      fireLasers: function() {
-        this.fire('seed-element-lasers-success', { sound: 'Pew pew pew!' });
+        var element = this.$.alertContainer;
+        element.className += ' faded';
+        window.setTimeout(function() {
+          element.parentNode.removeChild(element);
+        }, 1000)
       }
-
     });
 
   </script>
