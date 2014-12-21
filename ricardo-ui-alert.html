@@ -1,25 +1,16 @@
-<!--
-    @license
-    Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-    Code distributed by Google as part of the polymer project is also
-    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
 <link rel="import" href="../polymer/polymer.html">
 
 <!--
-Element providing solution to no problem in particular.
+Element providing a reusable alert widget.
 
 ##### Example
 
-    <seed-element></seed-element>
+    <ricardo-ui-alert></ricardo-ui-alert>
 
-@element seed-element
-@blurb Element providing solution to no problem in particular.
+@element ricardo-ui-alert
+@blurb Element providing a reusable alert widget.
 @status alpha
-@homepage http://polymerlabs.github.io/seed-element
+@homepage http://vgheri.github.io/ricardo-ui-alert
 -->
 <polymer-element name="ricardo-ui-alert" attributes="status">
 
@@ -45,7 +36,7 @@ Element providing solution to no problem in particular.
 
     Polymer({
       /**
-       * The `status` attribute sets the scope of the alert
+       * The `status` attribute sets the role of the alert
        *
        * @attribute status
        * @type string
@@ -66,7 +57,7 @@ Element providing solution to no problem in particular.
       },
 
       /**
-       * The `sayHello` method will return a greeting.
+       * The `dismiss` method will dismiss an alert.
        *
        * @method dismiss
        */
