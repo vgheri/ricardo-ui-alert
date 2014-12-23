@@ -1,0 +1,7 @@
+{
+  "name": "ricardo-ui-alert#gh-pages",
+  "private": true,
+  "dependencies": {
+    "ricardo-ui-alert": "vgheri/ricardo-ui-alert#master"
+  }
+}

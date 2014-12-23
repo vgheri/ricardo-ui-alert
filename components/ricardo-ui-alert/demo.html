@@ -1,0 +1,50 @@
+<!--
+    @license
+    Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+    Code distributed by Google as part of the polymer project is also
+    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0,
+                                  initial-scale=1.0, user-scalable=yes">
+  <title>ricardo-ui-alert demo</title>
+
+  <script src="../webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="ricardo-ui-alert.html">
+  <style>
+    ricardo-ui-alert {
+      margin: 10px 0px;
+    }
+  </style>
+</head>
+<body unresolved>
+
+  <p>Examples of using <code>&lt;ricardo-ui-alert&gt;</code>:</p>
+
+  <code>
+    &lt;ricardo-ui-alert status="success"&gt;Great news: ricardo-alert-ui is born!&lt;/ricardo-ui-alert&gt;
+  </code>
+
+  <ricardo-ui-alert status="success">
+    Great news: ricardo-alert-ui is born!
+  </ricardo-ui-alert>
+
+  <ricardo-ui-alert status="info">
+    Important info: ricardo-alert-ui is born!
+  </ricardo-ui-alert>
+
+  <ricardo-ui-alert status="warning">
+    Warning: ricardo-alert-ui is still in beta!
+  </ricardo-ui-alert>
+
+  <ricardo-ui-alert status="error">
+    Danger: ricardo-alert-ui is based on Polymer!
+  </ricardo-ui-alert>
+
+</body>
+</html>

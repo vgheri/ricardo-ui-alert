@@ -1,0 +1,36 @@
+{
+  "name": "ricardo-ui-alert",
+  "authors": [
+    "Valerio Gheri <valerio.gheri@gmail.com>"
+  ],
+  "description": "Reusable ui component to display an alert message.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "seed"
+  ],
+  "main": "ricardo-ui-alert.html",
+  "license": "MIT",
+  "homepage": "https://github.com/vgheri/ricardo-ui-alert/",
+  "ignore": [
+    "/.*",
+    "/tests/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.2"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^2.0.5"
+  },
+  "_release": "cfce59b91a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cfce59b91a76268b85a1b22110e09491847e6b2b"
+  },
+  "_source": "git://github.com/vgheri/ricardo-ui-alert.git",
+  "_target": "master",
+  "_originalSource": "vgheri/ricardo-ui-alert",
+  "_direct": true
+}
