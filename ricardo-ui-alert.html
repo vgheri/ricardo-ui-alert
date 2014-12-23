@@ -65,7 +65,8 @@ Element providing a reusable alert widget.
         var element = this.$.alertContainer;
         element.className += ' faded';
         window.setTimeout(function() {
-          element.parentNode.removeChild(element);
+          var customElement = element.parentNode.host;
+          customElement.parentNode.removeChild(customElement);
         }, 1000)
       }
     });
