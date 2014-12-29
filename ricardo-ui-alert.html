@@ -1,5 +1,4 @@
 <link rel="import" href="../polymer/polymer.html">
-
 <!--
 Element providing a reusable alert widget.
 
@@ -15,8 +14,9 @@ Element providing a reusable alert widget.
 <polymer-element name="ricardo-ui-alert" attributes="status">
 
   <template>
-
-    <link rel="stylesheet" href="ricardo-ui-alert.css">
+    <!-- build:css css/app.css -->
+    <link rel="stylesheet" href="css/ricardo-ui-alert.css">
+    <!-- endbuild -->
     <div id="alertContainer" class="{{status}}" >
       <span id="alertClose">
         <button type="button" on-click="{{dismiss}}">

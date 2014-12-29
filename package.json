@@ -1,0 +1,41 @@
+{
+  "name": "ricardo-ui-alert",
+  "version": "0.0.3",
+  "description": "Web component to display an alert message",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vgheri/ricardo-ui-alert.git"
+  },
+  "keywords": [
+    "polymer",
+    "web",
+    "component",
+    "alert"
+  ],
+  "author": "Valerio Gheri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vgheri/ricardo-ui-alert/issues"
+  },
+  "homepage": "https://github.com/vgheri/ricardo-ui-alert",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.11.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-filerev": "^2.1.2",
+    "grunt-usemin": "^3.0.0",
+    "grunt-vulcanize": "^0.6.1",
+    "load-grunt-tasks": "^2.0.0"
+  }
+}
